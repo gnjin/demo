@@ -11,7 +11,8 @@
 
 @interface JeezInputManager : NSObject
 
-@property (weak, nonatomic) id inputView;
+@property (weak, nonatomic) UIView *inputView;
+
 + (instancetype)sharedInstance;
 
 @end
@@ -74,9 +75,10 @@ static JeezInputManager *manager = nil;
 - (UIView *)kb_hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     
     UIView *hitView = [self kb_hitTest:point withEvent:event];
-    if (![hitView canBecomeFirstResponder] && [[JeezInputManager sharedInstance].inputView respondsToSelector:@selector(resignFirstResponder)]) {
+    UIView *inputView = [JeezInputManager sharedInstance].inputView;
+    if ([self isKindOfClass:[UIWindow class]] && ![hitView canBecomeFirstResponder] && [inputView respondsToSelector:@selector(resignFirstResponder)]) {
         
-        [[JeezInputManager sharedInstance].inputView resignFirstResponder];
+        [inputView resignFirstResponder];
         [JeezInputManager sharedInstance].inputView = nil;
     }
     return hitView;
