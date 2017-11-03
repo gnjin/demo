@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79694FDC1FA2C5C00010CA94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79694FDB1FA2C5C00010CA94 /* AppDelegate.m */; };
+		79694FDF1FA2C5C00010CA94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79694FDE1FA2C5C00010CA94 /* ViewController.m */; };
+		79694FE21FA2C5C10010CA94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79694FE01FA2C5C10010CA94 /* Main.storyboard */; };
+		79694FE41FA2C5C10010CA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79694FE31FA2C5C10010CA94 /* Assets.xcassets */; };
+		79694FE71FA2C5C10010CA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79694FE51FA2C5C10010CA94 /* LaunchScreen.storyboard */; };
+		79694FEA1FA2C5C10010CA94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79694FE91FA2C5C10010CA94 /* main.m */; };
+		79694FF41FA2C5C20010CA94 /* formTableInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79694FF31FA2C5C20010CA94 /* formTableInputTests.m */; };
+		79694FFF1FA2C5C20010CA94 /* formTableInputUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79694FFE1FA2C5C20010CA94 /* formTableInputUITests.m */; };
+		7969500E1FA2C7990010CA94 /* FormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969500C1FA2C7980010CA94 /* FormTableViewCell.m */; };
+		7983F4921FAC038F00B9C9D5 /* UIView+keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79694FF01FA2C5C20010CA94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79694FCF1FA2C5C00010CA94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79694FD61FA2C5C00010CA94;
+			remoteInfo = formTableInput;
+		};
+		79694FFB1FA2C5C20010CA94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79694FCF1FA2C5C00010CA94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79694FD61FA2C5C00010CA94;
+			remoteInfo = formTableInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79694FD71FA2C5C00010CA94 /* formTableInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formTableInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79694FDA1FA2C5C00010CA94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79694FDB1FA2C5C00010CA94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79694FDD1FA2C5C00010CA94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		79694FDE1FA2C5C00010CA94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		79694FE11FA2C5C10010CA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79694FE31FA2C5C10010CA94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79694FE61FA2C5C10010CA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79694FE81FA2C5C10010CA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79694FE91FA2C5C10010CA94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79694FEF1FA2C5C20010CA94 /* formTableInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formTableInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79694FF31FA2C5C20010CA94 /* formTableInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = formTableInputTests.m; sourceTree = "<group>"; };
+		79694FF51FA2C5C20010CA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79694FFA1FA2C5C20010CA94 /* formTableInputUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formTableInputUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79694FFE1FA2C5C20010CA94 /* formTableInputUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = formTableInputUITests.m; sourceTree = "<group>"; };
+		796950001FA2C5C20010CA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7969500C1FA2C7980010CA94 /* FormTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormTableViewCell.m; sourceTree = "<group>"; };
+		7969500D1FA2C7980010CA94 /* FormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTableViewCell.h; sourceTree = "<group>"; };
+		7983F4901FAC038F00B9C9D5 /* UIView+keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+keyboard.h"; sourceTree = "<group>"; };
+		7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+keyboard.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79694FD41FA2C5C00010CA94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79694FEC1FA2C5C20010CA94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79694FF71FA2C5C20010CA94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79694FCE1FA2C5C00010CA94 = {
+			isa = PBXGroup;
+			children = (
+				79694FD91FA2C5C00010CA94 /* formTableInput */,
+				79694FF21FA2C5C20010CA94 /* formTableInputTests */,
+				79694FFD1FA2C5C20010CA94 /* formTableInputUITests */,
+				79694FD81FA2C5C00010CA94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79694FD81FA2C5C00010CA94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79694FD71FA2C5C00010CA94 /* formTableInput.app */,
+				79694FEF1FA2C5C20010CA94 /* formTableInputTests.xctest */,
+				79694FFA1FA2C5C20010CA94 /* formTableInputUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79694FD91FA2C5C00010CA94 /* formTableInput */ = {
+			isa = PBXGroup;
+			children = (
+				79694FDA1FA2C5C00010CA94 /* AppDelegate.h */,
+				79694FDB1FA2C5C00010CA94 /* AppDelegate.m */,
+				79694FDD1FA2C5C00010CA94 /* ViewController.h */,
+				79694FDE1FA2C5C00010CA94 /* ViewController.m */,
+				7969500D1FA2C7980010CA94 /* FormTableViewCell.h */,
+				7969500C1FA2C7980010CA94 /* FormTableViewCell.m */,
+				7983F4901FAC038F00B9C9D5 /* UIView+keyboard.h */,
+				7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */,
+				79694FE01FA2C5C10010CA94 /* Main.storyboard */,
+				79694FE31FA2C5C10010CA94 /* Assets.xcassets */,
+				79694FE51FA2C5C10010CA94 /* LaunchScreen.storyboard */,
+				79694FE81FA2C5C10010CA94 /* Info.plist */,
+				79694FE91FA2C5C10010CA94 /* main.m */,
+			);
+			path = formTableInput;
+			sourceTree = "<group>";
+		};
+		79694FF21FA2C5C20010CA94 /* formTableInputTests */ = {
+			isa = PBXGroup;
+			children = (
+				79694FF31FA2C5C20010CA94 /* formTableInputTests.m */,
+				79694FF51FA2C5C20010CA94 /* Info.plist */,
+			);
+			path = formTableInputTests;
+			sourceTree = "<group>";
+		};
+		79694FFD1FA2C5C20010CA94 /* formTableInputUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79694FFE1FA2C5C20010CA94 /* formTableInputUITests.m */,
+				796950001FA2C5C20010CA94 /* Info.plist */,
+			);
+			path = formTableInputUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79694FD61FA2C5C00010CA94 /* formTableInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796950031FA2C5C20010CA94 /* Build configuration list for PBXNativeTarget "formTableInput" */;
+			buildPhases = (
+				79694FD31FA2C5C00010CA94 /* Sources */,
+				79694FD41FA2C5C00010CA94 /* Frameworks */,
+				79694FD51FA2C5C00010CA94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = formTableInput;
+			productName = formTableInput;
+			productReference = 79694FD71FA2C5C00010CA94 /* formTableInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79694FEE1FA2C5C20010CA94 /* formTableInputTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796950061FA2C5C20010CA94 /* Build configuration list for PBXNativeTarget "formTableInputTests" */;
+			buildPhases = (
+				79694FEB1FA2C5C20010CA94 /* Sources */,
+				79694FEC1FA2C5C20010CA94 /* Frameworks */,
+				79694FED1FA2C5C20010CA94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79694FF11FA2C5C20010CA94 /* PBXTargetDependency */,
+			);
+			name = formTableInputTests;
+			productName = formTableInputTests;
+			productReference = 79694FEF1FA2C5C20010CA94 /* formTableInputTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79694FF91FA2C5C20010CA94 /* formTableInputUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796950091FA2C5C20010CA94 /* Build configuration list for PBXNativeTarget "formTableInputUITests" */;
+			buildPhases = (
+				79694FF61FA2C5C20010CA94 /* Sources */,
+				79694FF71FA2C5C20010CA94 /* Frameworks */,
+				79694FF81FA2C5C20010CA94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79694FFC1FA2C5C20010CA94 /* PBXTargetDependency */,
+			);
+			name = formTableInputUITests;
+			productName = formTableInputUITests;
+			productReference = 79694FFA1FA2C5C20010CA94 /* formTableInputUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79694FCF1FA2C5C00010CA94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = gjian;
+				TargetAttributes = {
+					79694FD61FA2C5C00010CA94 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					79694FEE1FA2C5C20010CA94 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79694FD61FA2C5C00010CA94;
+					};
+					79694FF91FA2C5C20010CA94 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79694FD61FA2C5C00010CA94;
+					};
+				};
+			};
+			buildConfigurationList = 79694FD21FA2C5C00010CA94 /* Build configuration list for PBXProject "formTableInput" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79694FCE1FA2C5C00010CA94;
+			productRefGroup = 79694FD81FA2C5C00010CA94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79694FD61FA2C5C00010CA94 /* formTableInput */,
+				79694FEE1FA2C5C20010CA94 /* formTableInputTests */,
+				79694FF91FA2C5C20010CA94 /* formTableInputUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79694FD51FA2C5C00010CA94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79694FE71FA2C5C10010CA94 /* LaunchScreen.storyboard in Resources */,
+				79694FE41FA2C5C10010CA94 /* Assets.xcassets in Resources */,
+				79694FE21FA2C5C10010CA94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79694FED1FA2C5C20010CA94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79694FF81FA2C5C20010CA94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79694FD31FA2C5C00010CA94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79694FDF1FA2C5C00010CA94 /* ViewController.m in Sources */,
+				7969500E1FA2C7990010CA94 /* FormTableViewCell.m in Sources */,
+				79694FEA1FA2C5C10010CA94 /* main.m in Sources */,
+				79694FDC1FA2C5C00010CA94 /* AppDelegate.m in Sources */,
+				7983F4921FAC038F00B9C9D5 /* UIView+keyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79694FEB1FA2C5C20010CA94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79694FF41FA2C5C20010CA94 /* formTableInputTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79694FF61FA2C5C20010CA94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79694FFF1FA2C5C20010CA94 /* formTableInputUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79694FF11FA2C5C20010CA94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79694FD61FA2C5C00010CA94 /* formTableInput */;
+			targetProxy = 79694FF01FA2C5C20010CA94 /* PBXContainerItemProxy */;
+		};
+		79694FFC1FA2C5C20010CA94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79694FD61FA2C5C00010CA94 /* formTableInput */;
+			targetProxy = 79694FFB1FA2C5C20010CA94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79694FE01FA2C5C10010CA94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79694FE11FA2C5C10010CA94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79694FE51FA2C5C10010CA94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79694FE61FA2C5C10010CA94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		796950011FA2C5C20010CA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		796950021FA2C5C20010CA94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		796950041FA2C5C20010CA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 582UG67KR9;
+				INFOPLIST_FILE = formTableInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjian.formTableInput;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		796950051FA2C5C20010CA94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 582UG67KR9;
+				INFOPLIST_FILE = formTableInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjian.formTableInput;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		796950071FA2C5C20010CA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 582UG67KR9;
+				INFOPLIST_FILE = formTableInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjian.formTableInputTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/formTableInput.app/formTableInput";
+			};
+			name = Debug;
+		};
+		796950081FA2C5C20010CA94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 582UG67KR9;
+				INFOPLIST_FILE = formTableInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjian.formTableInputTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/formTableInput.app/formTableInput";
+			};
+			name = Release;
+		};
+		7969500A1FA2C5C20010CA94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 582UG67KR9;
+				INFOPLIST_FILE = formTableInputUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjian.formTableInputUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = formTableInput;
+			};
+			name = Debug;
+		};
+		7969500B1FA2C5C20010CA94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 582UG67KR9;
+				INFOPLIST_FILE = formTableInputUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjian.formTableInputUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = formTableInput;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79694FD21FA2C5C00010CA94 /* Build configuration list for PBXProject "formTableInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796950011FA2C5C20010CA94 /* Debug */,
+				796950021FA2C5C20010CA94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796950031FA2C5C20010CA94 /* Build configuration list for PBXNativeTarget "formTableInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796950041FA2C5C20010CA94 /* Debug */,
+				796950051FA2C5C20010CA94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796950061FA2C5C20010CA94 /* Build configuration list for PBXNativeTarget "formTableInputTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796950071FA2C5C20010CA94 /* Debug */,
+				796950081FA2C5C20010CA94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796950091FA2C5C20010CA94 /* Build configuration list for PBXNativeTarget "formTableInputUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7969500A1FA2C5C20010CA94 /* Debug */,
+				7969500B1FA2C5C20010CA94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79694FCF1FA2C5C00010CA94 /* Project object */;
+}
