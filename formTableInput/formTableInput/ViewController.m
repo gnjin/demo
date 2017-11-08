@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FormTableViewCell.h"
+#import "UIImage+mark.h"
 
 //static CGFloat const kDefaultItemH = 44;
 static NSString *const kContentSizeKey = @"contentSize";
@@ -17,6 +18,9 @@ static NSString *const kFormCellReuseId = @"formCellReuseId";
 
 @property (weak, nonatomic) IBOutlet UITableView *formTableView;
 @property (strong, nonatomic) NSMutableArray *items;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (assign, nonatomic) NSInteger imageType;
 
 @end
 
@@ -28,6 +32,38 @@ static NSString *const kFormCellReuseId = @"formCellReuseId";
     [_formTableView registerClass:[FormTableViewCell class] forCellReuseIdentifier:kFormCellReuseId];
     _formTableView.tableFooterView = [UIView new];
     self.items = [@[@{@"content" : @""}, @{@"content" : @""}, @{@"content" : @""}] mutableCopy];
+}
+
+#pragma mark- event
+- (IBAction)showImageView:(id)sender {
+    
+    if (!self.imageView.isHidden) {
+        self.imageView.hidden = YES;
+        return;
+    }
+    self.imageView.hidden = NO;
+    
+    int w = self.imageView.bounds.size.width;
+    int h = self.imageView.bounds.size.height;
+    UIImage *bgImage = nil;
+    switch (self.imageType) {
+        case 0:
+        case 1:
+        {
+            UIGraphicsBeginImageContext(self.imageView.bounds.size);
+            CGContextRef context = UIGraphicsGetCurrentContext();
+            CGContextSetFillColorWithColor(context, 0 == self.imageType ? [UIColor whiteColor].CGColor : [UIColor blackColor].CGColor);
+            CGContextFillRect(context, CGRectMake(0, 0, w, h));
+            bgImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+        }
+            break;
+        default:
+            bgImage = [UIImage imageNamed:@"test"];
+            break;
+    }
+    
+    self.imageView.image = [bgImage imageMark:@"壹1one" fontSize:33];
 }
 
 #pragma mark- UITableViewDelegate
@@ -43,6 +79,8 @@ static NSString *const kFormCellReuseId = @"formCellReuseId";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.imageType = indexPath.row;
     
     UITextView *input = [FormTableViewCell inputView];
     if ([input isFirstResponder]) {

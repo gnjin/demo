@@ -17,6 +17,7 @@
 		79694FFF1FA2C5C20010CA94 /* formTableInputUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79694FFE1FA2C5C20010CA94 /* formTableInputUITests.m */; };
 		7969500E1FA2C7990010CA94 /* FormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969500C1FA2C7980010CA94 /* FormTableViewCell.m */; };
 		7983F4921FAC038F00B9C9D5 /* UIView+keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */; };
+		79EC473B1FB2E77A000C64DC /* UIImage+mark.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC473A1FB2E77A000C64DC /* UIImage+mark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		7969500D1FA2C7980010CA94 /* FormTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTableViewCell.h; sourceTree = "<group>"; };
 		7983F4901FAC038F00B9C9D5 /* UIView+keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+keyboard.h"; sourceTree = "<group>"; };
 		7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+keyboard.m"; sourceTree = "<group>"; };
+		79EC47391FB2E77A000C64DC /* UIImage+mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+mark.h"; sourceTree = "<group>"; };
+		79EC473A1FB2E77A000C64DC /* UIImage+mark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+mark.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				7969500C1FA2C7980010CA94 /* FormTableViewCell.m */,
 				7983F4901FAC038F00B9C9D5 /* UIView+keyboard.h */,
 				7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */,
+				79EC47391FB2E77A000C64DC /* UIImage+mark.h */,
+				79EC473A1FB2E77A000C64DC /* UIImage+mark.m */,
 				79694FE01FA2C5C10010CA94 /* Main.storyboard */,
 				79694FE31FA2C5C10010CA94 /* Assets.xcassets */,
 				79694FE51FA2C5C10010CA94 /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 				7969500E1FA2C7990010CA94 /* FormTableViewCell.m in Sources */,
 				79694FEA1FA2C5C10010CA94 /* main.m in Sources */,
 				79694FDC1FA2C5C00010CA94 /* AppDelegate.m in Sources */,
+				79EC473B1FB2E77A000C64DC /* UIImage+mark.m in Sources */,
 				7983F4921FAC038F00B9C9D5 /* UIView+keyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
