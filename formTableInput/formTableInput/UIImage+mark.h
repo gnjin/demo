@@ -10,6 +10,6 @@
 
 @interface UIImage (mark)
 
-- (UIImage *)imageMark:(NSString *)markString fontSize:(CGFloat)foneSize;
+- (UIImage *)imageMark:(NSString *)markString;
 
 @end
