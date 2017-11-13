@@ -63,7 +63,7 @@ static NSString *const kFormCellReuseId = @"formCellReuseId";
             break;
     }
     
-    self.imageView.image = [bgImage imageMark:@"壹1one"];
+    self.imageView.image = [bgImage imageMark:@"壹1one123123123123123"];
 }
 
 #pragma mark- UITableViewDelegate

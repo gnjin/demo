@@ -19,9 +19,9 @@ static CGFloat kDefaultFontSize = 17;
     
     UIFont *textFont = [UIFont boldSystemFontOfSize:kDefaultFontSize];
     CGRect rect = [markString boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) options:0 attributes:@{NSFontAttributeName : textFont} context:nil];
-    CGFloat fontSize = kDefaultFontSize * w / rect.size.width;
+    CGFloat fontSize = 0.8 * kDefaultFontSize * w / rect.size.width;
     textFont = [UIFont boldSystemFontOfSize:fontSize];
-    CGFloat fontHeight = textFont.ascender + textFont.descender;
+    CGFloat fontHeight = textFont.lineHeight;
     if (fontHeight > h * 0.2) {
         fontSize = fontSize * h * 0.2 / fontHeight;
     }
@@ -60,7 +60,7 @@ static CGFloat kDefaultFontSize = 17;
     CGContextRotateCTM(con, -30 * M_PI / 180.0);
     for (NSInteger i = 0; i < 3; i++) {
         
-        [textImage drawAtPoint:CGPointMake((i % 2) * w * -0.2, i * h * 0.4)];
+        [textImage drawAtPoint:CGPointMake(i * w * -0.13, i * h * 0.45)];
     }
     
     UIImage *markImage = UIGraphicsGetImageFromCurrentImageContext();
