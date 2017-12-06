@@ -18,6 +18,7 @@
 		7969500E1FA2C7990010CA94 /* FormTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969500C1FA2C7980010CA94 /* FormTableViewCell.m */; };
 		7981D1591FC2A8A9003CC20B /* LLFScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7981D1581FC2A8A9003CC20B /* LLFScrollViewController.m */; };
 		7983F4921FAC038F00B9C9D5 /* UIView+keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */; };
+		79BE68041FD7B15A00B39E34 /* JeezPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BE68031FD7B15A00B39E34 /* JeezPageControl.m */; };
 		79EC473B1FB2E77A000C64DC /* UIImage+mark.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EC473A1FB2E77A000C64DC /* UIImage+mark.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		7981D1581FC2A8A9003CC20B /* LLFScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLFScrollViewController.m; sourceTree = "<group>"; };
 		7983F4901FAC038F00B9C9D5 /* UIView+keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+keyboard.h"; sourceTree = "<group>"; };
 		7983F4911FAC038F00B9C9D5 /* UIView+keyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+keyboard.m"; sourceTree = "<group>"; };
+		79BE68021FD7B15A00B39E34 /* JeezPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JeezPageControl.h; sourceTree = "<group>"; };
+		79BE68031FD7B15A00B39E34 /* JeezPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JeezPageControl.m; sourceTree = "<group>"; };
 		79EC47391FB2E77A000C64DC /* UIImage+mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+mark.h"; sourceTree = "<group>"; };
 		79EC473A1FB2E77A000C64DC /* UIImage+mark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+mark.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +122,8 @@
 				79694FDE1FA2C5C00010CA94 /* ViewController.m */,
 				7981D1571FC2A8A9003CC20B /* LLFScrollViewController.h */,
 				7981D1581FC2A8A9003CC20B /* LLFScrollViewController.m */,
+				79BE68021FD7B15A00B39E34 /* JeezPageControl.h */,
+				79BE68031FD7B15A00B39E34 /* JeezPageControl.m */,
 				7969500D1FA2C7980010CA94 /* FormTableViewCell.h */,
 				7969500C1FA2C7980010CA94 /* FormTableViewCell.m */,
 				7983F4901FAC038F00B9C9D5 /* UIView+keyboard.h */,
@@ -285,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BE68041FD7B15A00B39E34 /* JeezPageControl.m in Sources */,
 				79694FDF1FA2C5C00010CA94 /* ViewController.m in Sources */,
 				7969500E1FA2C7990010CA94 /* FormTableViewCell.m in Sources */,
 				79694FEA1FA2C5C10010CA94 /* main.m in Sources */,
