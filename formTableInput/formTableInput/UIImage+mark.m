@@ -70,4 +70,35 @@ static CGFloat kDefaultFontSize = 17;
     return markImage;
 }
 
+- (UIImage *)stretchImageWithLeftCapWidth:(NSInteger)leftCap topCapHeight:(NSInteger)topCap sLeftCapWidth:(NSInteger)sLeftCap sTopCapHeight:(NSInteger)sTopCap size:(CGSize)size {
+    
+    CGSize imageSize = self.size;
+    UIImage *image = [self stretchableImageWithLeftCapWidth:leftCap topCapHeight:topCap];
+    
+    CGFloat tempWidth = size.width / 2 + imageSize.width / 2;
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(tempWidth, size.height), NO, [UIScreen mainScreen].scale);
+    [image drawInRect:CGRectMake(0, 0, tempWidth, size.height)];
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    image = [image stretchableImageWithLeftCapWidth:sLeftCap + tempWidth - imageSize.width topCapHeight:sTopCap];
+    
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(size.width, size.height), NO, [UIScreen mainScreen].scale);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+- (UIImage *)addText:(NSString *)text textAttributs:(NSDictionary<NSAttributedStringKey, id> *)attributes origin:(CGPoint)origin {
+    
+    UIGraphicsBeginImageContext(self.size);
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
+    [text drawInRect:CGRectMake(origin.x, origin.y, self.size.width, self.size.height) withAttributes:attributes];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
