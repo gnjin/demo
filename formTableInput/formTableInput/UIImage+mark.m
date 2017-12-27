@@ -93,9 +93,9 @@ static CGFloat kDefaultFontSize = 17;
 
 - (UIImage *)addText:(NSString *)text textAttributs:(NSDictionary<NSAttributedStringKey, id> *)attributes origin:(CGPoint)origin {
     
-    UIGraphicsBeginImageContext(self.size);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.size.width, self.size.height), NO, self.scale);
     [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
-    [text drawInRect:CGRectMake(origin.x, origin.y, self.size.width, self.size.height) withAttributes:attributes];
+    [text drawAtPoint:CGPointMake(origin.x, origin.y) withAttributes:attributes];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
