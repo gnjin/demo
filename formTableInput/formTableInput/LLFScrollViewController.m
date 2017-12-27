@@ -7,6 +7,7 @@
 //
 
 #import "LLFScrollViewController.h"
+#import "UIImage+mark.h"
 
 @interface LLFScrollViewController ()
 
@@ -17,7 +18,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addScrollView];
+//    [self addScrollView];
+    [self addAnnoImageView];
+}
+
+- (void)addAnnoImageView {
+    
+    NSString *tips = @"猜猜这是哪儿？";
+    UIImage *annoImage = [UIImage imageNamed:@"map_anno"];
+    
+    UIFont *textFont = [UIFont systemFontOfSize:35];
+    CGRect contentBounds = [tips boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 44) options:0 attributes:@{NSFontAttributeName : textFont} context:nil];
+    CGSize defaultSize = CGSizeMake(186 / annoImage.scale, 104 / annoImage.scale);
+    CGFloat width = contentBounds.size.width < defaultSize.width ? annoImage.size.width : contentBounds.size.width + annoImage.size.width - defaultSize.width;
+    CGFloat height = contentBounds.size.height < defaultSize.height ? annoImage.size.height : contentBounds.size.height + annoImage.size.height - defaultSize.height;
+    
+    UIImage *newAnnoImage = [annoImage stretchImageWithLeftCapWidth:50 / annoImage.scale topCapHeight:50 / annoImage.scale sLeftCapWidth:200 / annoImage.scale sTopCapHeight:50 / annoImage.scale size:CGSizeMake(ceil(width), ceil(height))];
+    
+    CGPoint textOrigin = CGPointMake((newAnnoImage.size.width - contentBounds.size.width) * 0.5, 0);
+    textOrigin.y = contentBounds.size.height < defaultSize.height ? (defaultSize.height - contentBounds.size.height) * 0.5 : (newAnnoImage.size.height - contentBounds.size.height) * 0.5;
+    newAnnoImage = [newAnnoImage addText:tips textAttributs:@{NSFontAttributeName : textFont} origin:textOrigin];
+    
+    UIImageView *annoImageView = [[UIImageView alloc] initWithImage:newAnnoImage];
+    annoImageView.frame = CGRectMake(20, 100, CGRectGetWidth(annoImageView.bounds), CGRectGetHeight(annoImageView.bounds));
+    [self.view addSubview:annoImageView];
 }
 
 - (void)addScrollView {
